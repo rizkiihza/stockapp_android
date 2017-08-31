@@ -1,0 +1,7 @@
+#Sat Aug 12 16:07:55 ICT 2017
+base.0=C\:\\Users\\Acer E5-475G\\Downloads\\StockApp31\\StockApp31\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\2\\YahooFinanceAPI-3.8.0_ef7a163cab394cffcda593d59d81bc227d20ace3
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\Acer E5-475G\\Downloads\\StockApp31\\StockApp31\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-v4-19.1.0_7541db917baa506c0dd564574dda219c7099e134\\classes.dex
+base.1=C\:\\Users\\Acer E5-475G\\Downloads\\StockApp31\\StockApp31\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-v4-19.1.0_7541db917baa506c0dd564574dda219c7099e134
+file.0=C\:\\Users\\Acer E5-475G\\Downloads\\StockApp31\\StockApp31\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\2\\YahooFinanceAPI-3.8.0_ef7a163cab394cffcda593d59d81bc227d20ace3\\classes.dex

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\Acer E5-475G\Downloads\StockApp31\StockApp31\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0_7541db917baa506c0dd564574dda219c7099e134.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Acer E5-475G\Downloads\StockApp31\StockApp31\app\libs\YahooFinanceAPI-3.8.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c8ea15cf3ddf75c16ae6cabb54566427adc572e4">
+        <dex dex="C:\Users\Acer E5-475G\Downloads\StockApp31\StockApp31\app\build\intermediates\pre-dexed\debug\YahooFinanceAPI-3.8.0_ef7a163cab394cffcda593d59d81bc227d20ace3.jar" />
+    </item>
+
+</items>
