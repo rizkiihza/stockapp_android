@@ -2,6 +2,7 @@ package com.example.stockapp3;
 import android.util.Log;
 
 import java.math.BigDecimal;
+import java.math.MathContext;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +12,6 @@ public class MACD {
     private List<BigDecimal> emacede;
 
     public  MACD(){
-
         emacede = new ArrayList<BigDecimal>();
         signal = new BigDecimal(0).movePointLeft(2);
         delta = new BigDecimal(100);
@@ -27,18 +27,21 @@ public class MACD {
     }
 
     private BigDecimal emaN(List<BigDecimal> values, int N, int akhir){
-        BigDecimal alpha = new BigDecimal(2).movePointLeft(2);
-        alpha = alpha.divide(new BigDecimal(N+1).movePointLeft(2),3);
-        BigDecimal st = new BigDecimal(0);
+        BigDecimal alpha = BigDecimal.valueOf(2.0);
+        BigDecimal pembagi = BigDecimal.valueOf(N+1);
+        alpha = alpha.divide(pembagi,5, BigDecimal.ROUND_HALF_UP);
+        BigDecimal st = BigDecimal.valueOf(0.0);
         int index = values.size() - N - akhir;
         for(int i = 0; i<N; i++){
             if(i == 0){
                 st = values.get(index);
             }
             else{
-                st = (alpha.multiply(values.get(index)));
+                BigDecimal today_price = values.get(index);
+                BigDecimal dummy = today_price.multiply(alpha);
                 BigDecimal ones = new BigDecimal(1);
-                st = st.add(ones.subtract(alpha).multiply(values.get(i)));
+                BigDecimal prev_emacd_w = st.multiply(ones.subtract(alpha));
+                st = dummy.add(prev_emacd_w);
             }
             index++;
         }
