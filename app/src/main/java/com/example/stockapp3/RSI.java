@@ -74,7 +74,7 @@ public class RSI {
                          .add(list_gain.get(i + 14)))
                          .divide(BigDecimal.valueOf(14), 3));
                 avrg_loss.add((avrg_loss.get(i - 1)
-                         .multiply( BigDecimal.valueOf(13))
+                         .multiply(BigDecimal.valueOf(13))
                          .add(list_loss.get(i + 14)))
                          .divide(BigDecimal.valueOf(14), 3));
             }
