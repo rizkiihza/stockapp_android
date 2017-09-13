@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Aug 16 14:00:54 ICT 2017
+#Wed Sep 13 08:50:02 ICT 2017
 2.base=C\:\\Users\\Acer E5-475G\\Downloads\\StockApp31\\StockApp31\\app\\build\\intermediates\\res\\resources-debug.ap_
 5.file=C\:\\Users\\Acer E5-475G\\Downloads\\StockApp31\\StockApp31\\app\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc
 5.set=ANDROID_RESOURCE

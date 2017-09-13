@@ -59,7 +59,7 @@ public class RSI {
             } else {
 
                 list_gain.add(BigDecimal.ZERO);
-                list_loss.add(delta);
+                list_loss.add(delta.abs());
 
             }
         }
