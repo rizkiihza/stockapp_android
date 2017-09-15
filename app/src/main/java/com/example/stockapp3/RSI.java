@@ -108,7 +108,7 @@ public class RSI {
     }
 
     public void rsi_all(List<BigDecimal> price){
-       list_in(price);
+        list_in(price);
         delta_check();
         avrg();
         rsi_count();

@@ -69,8 +69,11 @@ public class MainActivity extends Activity {
     			dividendAnnualYield,
     			dividendAnnualYieldPercent;
 
-	List<BigDecimal> historical_price = new ArrayList<BigDecimal>();
+	List<BigDecimal> historical_quote = new ArrayList<BigDecimal>();
+	List<BigDecimal> historical_low = new ArrayList<BigDecimal>();
+	List<BigDecimal> historical_high = new ArrayList<BigDecimal>();
 	MACD macd = new MACD();
+	RSI cekRSI = new RSI();
 	Button btnShow, btnClear;
 
     static DecimalFormat formatter = new DecimalFormat("#,###.00");
@@ -126,8 +129,9 @@ public class MainActivity extends Activity {
 		previousClose = stock.getQuote(true).getPreviousClose();
 		change = stock.getQuote(true).getChange();
 		changeInPercent = stock.getQuote(true).getChangeInPercent();
-		historical_price = get_historical_data(stock);
-		macd.calculate_MACD(historical_price);
+		historical_quote = get_historical_data(stock);
+		macd.calculate_MACD(historical_quote);
+		cekRSI.rsi_all(historical_quote);
 		if(macd.is_buy()){
 			macdIndicator = "Buy";
 		}
@@ -193,10 +197,13 @@ public class MainActivity extends Activity {
 		from.add(Calendar.WEEK_OF_YEAR,-10);
 		List<HistoricalQuote> hist = stock_name.getHistory(from, Interval.DAILY);
 		for(HistoricalQuote dummy:hist){
-			historical_price.add(dummy.getClose());
+			historical_quote.add(dummy.getClose());
+			historical_low.add(dummy.getLow());
+			historical_high.add(dummy.getHigh());
 		}
-        RSI albert = new RSI();
-        albert.rsi_all(historical_price);
-		return historical_price;
+		Stochastic stoc = new Stochastic();
+        stoc.kCount(historical_low, historical_high, historical_quote);
+        stoc.dCount();
+		return historical_quote;
 	}
 }
