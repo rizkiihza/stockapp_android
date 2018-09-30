@@ -1,0 +1,7 @@
+#Sun Sep 30 15:45:32 WIB 2018
+base.0=/home/rizki/informatika/project/stockapp/app/build/intermediates/transforms/dex/debug/folders/1000/2/YahooFinanceAPI-3.8.0_eb58571b1f8a658edd994085ebb1809faf20614a
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/home/rizki/informatika/project/stockapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-v4-19.1.0_62429099d5d3b591159feed83f1c8a3b12e330ac/classes.dex
+base.1=/home/rizki/informatika/project/stockapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-v4-19.1.0_62429099d5d3b591159feed83f1c8a3b12e330ac
+file.0=/home/rizki/informatika/project/stockapp/app/build/intermediates/transforms/dex/debug/folders/1000/2/YahooFinanceAPI-3.8.0_eb58571b1f8a658edd994085ebb1809faf20614a/classes.dex
