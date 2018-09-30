@@ -38,7 +38,7 @@ public class MainActivity extends Activity {
 	MACD macd = new MACD();
 	RSI cekRSI = new RSI();
 
-	Button btnShow, btnClear;
+	Button btnShow;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

@@ -23,10 +23,10 @@
 			android:layout_centerHorizontal="true" />
 
 		<Button
-			android:id="@+id/btnClear"
+			android:id="@+id/btn"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:onClick="onClick_Show"
+			android:onClick="onClick"
 			android:text="Check"
 			android:layout_alignParentTop="true"
 			android:layout_alignParentRight="true"
