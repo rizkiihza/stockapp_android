@@ -1,9 +1,5 @@
 [
     {
-        "merged": "D:\\home\\rizki\\informatika\\project\\stockapp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
-        "source": "D:\\home\\rizki\\informatika\\project\\stockapp\\app\\src\\main\\res\\menu\\main.xml"
-    },
-    {
         "merged": "D:\\home\\rizki\\informatika\\project\\stockapp\\C:\\Users\\pekerti\\Documents\\Kerjaan\\Stock Predict App\\StockApp31\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
         "source": "D:\\home\\rizki\\informatika\\project\\stockapp\\C:\\Users\\pekerti\\Documents\\Kerjaan\\Stock Predict App\\StockApp31\\app\\src\\main\\res\\menu\\main.xml"
     },
@@ -14,5 +10,9 @@
     {
         "merged": "D:\\home\\rizki\\informatika\\project\\stockapp\\C:\\Users\\Acer E5-475G\\Downloads\\StockApp31\\StockApp31\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
         "source": "D:\\home\\rizki\\informatika\\project\\stockapp\\C:\\Users\\Acer E5-475G\\Downloads\\StockApp31\\StockApp31\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "D:\\home\\rizki\\informatika\\project\\stockapp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "D:\\home\\rizki\\informatika\\project\\stockapp\\app\\src\\main\\res\\menu\\main.xml"
     }
 ]

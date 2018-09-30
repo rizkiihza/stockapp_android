@@ -12,16 +12,6 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:gravity="right" >
-		<EditText
-			android:id="@+id/insertSymbol"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:inputType="textCapCharacters"
-			android:text="BBNI"
-			android:layout_alignBaseline="@id/btnShow"
-			android:layout_alignBottom="@id/btnShow"
-			android:layout_centerHorizontal="true" />
-
 		<Button
 			android:id="@+id/btnShow"
 			android:layout_width="wrap_content"
@@ -31,7 +21,20 @@
 			android:layout_alignParentTop="true"
 			android:layout_alignParentRight="true"
 			android:layout_alignParentEnd="true" />
+
+		<EditText
+			android:id="@+id/insertSymbol"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:inputType="textCapCharacters"
+			android:text="BBNI"
+			android:layout_alignBaseline="@id/btnShow"
+			android:layout_alignBottom="@id/btnShow"
+			android:hint="Insert Stock Symbol"
+			android:layout_centerHorizontal="true" />
+
 	</RelativeLayout>
+
 	<RelativeLayout
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content">
@@ -68,4 +71,5 @@
 			android:text=" EMA: Buy \n MACD: Buy \n RSI: Buy \n Stochastic Slow: Sell"
 			/>
 	</RelativeLayout>
+
 </LinearLayout>

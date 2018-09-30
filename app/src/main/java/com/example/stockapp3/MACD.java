@@ -7,41 +7,41 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MACD {
-    private BigDecimal signal;
-    private BigDecimal delta;
-    private List<BigDecimal> emacede;
+    private Double signal;
+    private Double delta;
+    private List<Double> emacede;
 
     public  MACD(){
-        emacede = new ArrayList<BigDecimal>();
-        signal = new BigDecimal(0).movePointLeft(2);
-        delta = new BigDecimal(100);
+        emacede = new ArrayList<Double>();
+        signal = 0.00 ;
+        delta = 100.0;
     }
 
-    public void calculate_MACD(List<BigDecimal> prices){
+    public void calculate_MACD(List<Double> prices){
         for (int i = 8; i >= 0; i--){
-            BigDecimal ma12 = emaN(prices,12,i);
-            BigDecimal ma26 = emaN(prices,26,i);
-            emacede.add(ma12.subtract(ma26));
+            Double ma12 = emaN(prices,12,i);
+            Double ma26 = emaN(prices,26,i);
+            emacede.add(ma12 - ma26);
         }
         signal = emaN(emacede,9,0);
     }
 
-    private BigDecimal emaN(List<BigDecimal> values, int N, int akhir){
-        BigDecimal alpha = BigDecimal.valueOf(2.0);
-        BigDecimal pembagi = BigDecimal.valueOf(N+1);
-        alpha = alpha.divide(pembagi,5, BigDecimal.ROUND_HALF_UP);
-        BigDecimal st = BigDecimal.valueOf(0.0);
+    private Double emaN(List<Double> values, int N, int akhir){
+        Double alpha = 2.0;
+        Double n = new Double(N);
+        Double pembagi = n + 1;
+        alpha = alpha / pembagi;
+        Double st = 0.0;
         int index = values.size() - N - akhir;
         for(int i = 0; i<N; i++){
             if(i == 0){
                 st = values.get(index);
             }
             else{
-                BigDecimal today_price = values.get(index);
-                BigDecimal dummy = today_price.multiply(alpha);
-                BigDecimal ones = new BigDecimal(1);
-                BigDecimal prev_emacd_w = st.multiply(ones.subtract(alpha));
-                st = dummy.add(prev_emacd_w);
+                Double today_price = values.get(index);
+                Double dummy = today_price * alpha;
+                Double prev_emacd_w = st * (1 - alpha);
+                st = dummy + prev_emacd_w;
             }
             index++;
         }
@@ -49,17 +49,17 @@ public class MACD {
     }
 
     public boolean is_buy(){
-        BigDecimal val = emacede.get(8).subtract(signal);
+        Double val = emacede.get(8) + signal;
         Log.i("Nilai val", val.toString() + " " + emacede.get(8).toString() + " " + signal.toString());
-        if(val.abs().compareTo(delta) == -1 && val.compareTo(BigDecimal.ZERO) == -1)
+        if(Math.abs(val) < delta && val < 0)
             return true;
         else
             return false;
     }
 
     public boolean is_sell(){
-        BigDecimal val = emacede.get(8).subtract(signal);
-        if(val.abs().compareTo(delta) == -1 && val.compareTo(BigDecimal.ZERO) == 1)
+        Double val = emacede.get(8) - signal;
+        if(Math.abs(val) < delta && val > 0)
             return true;
         else
             return false;

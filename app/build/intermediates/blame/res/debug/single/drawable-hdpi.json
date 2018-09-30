@@ -1,5 +1,9 @@
 [
     {
+        "merged": "D:\\home\\rizki\\informatika\\project\\stockapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
+        "source": "D:\\home\\rizki\\informatika\\project\\stockapp\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
         "merged": "D:\\home\\rizki\\informatika\\project\\stockapp\\C:\\Users\\pekerti\\Documents\\Kerjaan\\Stock Predict App\\StockApp31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
         "source": "D:\\home\\rizki\\informatika\\project\\stockapp\\C:\\Users\\pekerti\\Documents\\Kerjaan\\Stock Predict App\\StockApp31\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
     },
@@ -10,9 +14,5 @@
     {
         "merged": "D:\\Users\\Albert Setiawan\\Documents\\StockApp31\\stockapp_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
         "source": "D:\\Users\\Albert Setiawan\\Documents\\StockApp31\\stockapp_android\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "D:\\home\\rizki\\informatika\\project\\stockapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
-        "source": "D:\\home\\rizki\\informatika\\project\\stockapp\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
     }
 ]

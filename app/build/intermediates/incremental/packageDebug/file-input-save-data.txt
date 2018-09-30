@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Sep 30 16:38:13 ICT 2018
+#Sun Sep 30 17:37:40 ICT 2018
 2.base=D\:\\Users\\Albert Setiawan\\Documents\\StockApp31\\stockapp_android\\app\\build\\intermediates\\res\\resources-debug.ap_
 5.file=D\:\\Users\\Albert Setiawan\\Documents\\StockApp31\\stockapp_android\\app\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml
 5.set=ANDROID_RESOURCE
