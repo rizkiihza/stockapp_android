@@ -17,63 +17,49 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:inputType="textCapCharacters"
-			android:hint="Insert Stock Symbol"
+			android:text="BBNI"
 			android:layout_alignBaseline="@+id/btnClear"
 			android:layout_alignBottom="@+id/btnClear"
 			android:layout_centerHorizontal="true" />
-		<Button
-			android:id="@+id/btnShow"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:onClick="clearAction"
-			android:text="Clear"
-			android:visibility="invisible"
-			android:layout_alignParentTop="true"
-			android:layout_alignParentRight="true"
-			android:layout_alignParentEnd="true" />
+
 		<Button
 			android:id="@+id/btnClear"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:onClick="onClick_Show"
-			android:text="Load"
-			android:visibility="visible"
+			android:text="Check"
 			android:layout_alignParentTop="true"
 			android:layout_alignParentRight="true"
 			android:layout_alignParentEnd="true" />
 	</RelativeLayout>
 
-	<ScrollView
-		android:layout_width="match_parent"
-		android:layout_height="328dp" >
-		<TextView
-			android:id="@+id/displayData"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:hint="Display Data" />
-	</ScrollView>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:hint="Display Data"
+	/>
 
-	<TableLayout
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content" >
-		<TableRow
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:gravity="center_horizontal" >
-			<Button
-				android:id="@+id/btnPPCalc"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:onClick="onClick_Show"
-				android:text="Pivot Point" />
-			<Button
-				android:id="@+id/btnPPClose"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:onClick="onClick_Show"
-				android:text="Close" />
-		</TableRow>
+	<TextView
+		android:id="@+id/displayData"
+		android:layout_marginTop="20px"
+		android:layout_marginBottom="10px"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text=" Nama: Bank BNI \n Close: xxxx \n Prev: yyyy \n Change: zz%"
+	/>
 
-	</TableLayout>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10px"
+		android:hint="Recommendation"
+	/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20px"
+		android:text=" EMA: Buy \n MACD: Buy \n RSI: Buy \n Stochastic Slow: Sell"
+		/>
 
 </LinearLayout>

@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/home/rizki/informatika/project/stockapp/app/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/home/rizki/informatika/project/stockapp/app/src/debug/shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="D:\Users\Albert Setiawan\Documents\StockApp31\stockapp_android\app\src\main\shaders"/></dataSet><dataSet config="debug"><source path="D:\Users\Albert Setiawan\Documents\StockApp31\stockapp_android\app\src\debug\shaders"/></dataSet></merger>

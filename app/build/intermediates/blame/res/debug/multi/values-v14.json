@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/rizki/informatika/project/stockapp/C:\\Users\\pekerti\\Documents\\Kerjaan\\Stock Predict App\\StockApp31\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
+        "outputFile": "D:\\home\\rizki\\informatika\\project\\stockapp\\C:\\Users\\Acer E5-475G\\Downloads\\StockApp31\\StockApp31\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 201
                 },
                 "from": {
-                    "file": "/home/rizki/informatika/project/stockapp/C:\\Users\\pekerti\\Documents\\Kerjaan\\Stock Predict App\\StockApp31\\app\\src\\main\\res\\values-v14\\styles.xml",
+                    "file": "D:\\home\\rizki\\informatika\\project\\stockapp\\C:\\Users\\Acer E5-475G\\Downloads\\StockApp31\\StockApp31\\app\\src\\main\\res\\values-v14\\styles.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -26,7 +26,7 @@
         ]
     },
     {
-        "outputFile": "/home/rizki/informatika/project/stockapp/C:\\Users\\Acer E5-475G\\Downloads\\StockApp31\\StockApp31\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
+        "outputFile": "D:\\Users\\Albert Setiawan\\Documents\\StockApp31\\stockapp_android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
         "map": [
             {
                 "to": {
@@ -38,21 +38,21 @@
                     "endOffset": 201
                 },
                 "from": {
-                    "file": "/home/rizki/informatika/project/stockapp/C:\\Users\\Acer E5-475G\\Downloads\\StockApp31\\StockApp31\\app\\src\\main\\res\\values-v14\\styles.xml",
+                    "file": "D:\\Users\\Albert Setiawan\\Documents\\StockApp31\\stockapp_android\\app\\src\\main\\res\\values-v14\\styles.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 225,
+                        "startOffset": 227,
                         "endLine": 9,
                         "endColumn": 12,
-                        "endOffset": 373
+                        "endOffset": 375
                     }
                 }
             }
         ]
     },
     {
-        "outputFile": "/home/rizki/informatika/project/stockapp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
+        "outputFile": "D:\\home\\rizki\\informatika\\project\\stockapp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
         "map": [
             {
                 "to": {
@@ -64,7 +64,7 @@
                     "endOffset": 201
                 },
                 "from": {
-                    "file": "/home/rizki/informatika/project/stockapp/app/src/main/res/values-v14/styles.xml",
+                    "file": "D:\\home\\rizki\\informatika\\project\\stockapp\\app\\src\\main\\res\\values-v14\\styles.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -72,6 +72,32 @@
                         "endLine": 9,
                         "endColumn": 12,
                         "endOffset": 366
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "D:\\home\\rizki\\informatika\\project\\stockapp\\C:\\Users\\pekerti\\Documents\\Kerjaan\\Stock Predict App\\StockApp31\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 4,
+                    "endColumn": 12,
+                    "endOffset": 201
+                },
+                "from": {
+                    "file": "D:\\home\\rizki\\informatika\\project\\stockapp\\C:\\Users\\pekerti\\Documents\\Kerjaan\\Stock Predict App\\StockApp31\\app\\src\\main\\res\\values-v14\\styles.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 225,
+                        "endLine": 9,
+                        "endColumn": 12,
+                        "endOffset": 373
                     }
                 }
             }

@@ -3,21 +3,21 @@
 
     <item
         is-multidex="false"
-        jar="/home/rizki/Android/Sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
-        <dex dex="/home/rizki/informatika/project/stockapp/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0_62429099d5d3b591159feed83f1c8a3b12e330ac.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/rizki/informatika/project/stockapp/app/libs/YahooFinanceAPI-3.8.0.jar"
+        jar="D:\Users\Albert Setiawan\Documents\StockApp31\stockapp_android\app\libs\YahooFinanceAPI-3.8.0.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
         sha1="c8ea15cf3ddf75c16ae6cabb54566427adc572e4">
-        <dex dex="/home/rizki/informatika/project/stockapp/app/build/intermediates/pre-dexed/debug/YahooFinanceAPI-3.8.0_eb58571b1f8a658edd994085ebb1809faf20614a.jar" />
+        <dex dex="D:\Users\Albert Setiawan\Documents\StockApp31\stockapp_android\app\build\intermediates\pre-dexed\debug\YahooFinanceAPI-3.8.0_cabc6158f3e479461378796cfb1e396e5e419bf8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Albert Setiawan\.android\build-cache\4d24890fa18094daaff5c2f823f817a44ca5d829\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="D:\Users\Albert Setiawan\Documents\StockApp31\stockapp_android\app\build\intermediates\pre-dexed\debug\classes_ddf955abaa78a123365993508b1e62e252d6e18b.jar" />
     </item>
 
 </items>
