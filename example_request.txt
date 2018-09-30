@@ -1,0 +1,1 @@
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=BBNI.JK&apikey=E5FDVTPST51Z1DXC

@@ -32,178 +32,24 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
-    TextView display;
-    Stock stock;
-    EditText symbol_ET;
-    String symbol_S;
-    String	dispName,
-    		dispPrice,
-    		dispTradeTimeStr,
-    		dispTradeDateStr,
-    		dispTradeTime,
-    		dispOpen,
-    		dispDayHigh,
-    		dispDayLow,
-    		dispChange,
-    		dispPreviousClose,
-    		dispDividendAnnualYield,
-    		dispExDate,
-    		dispPayDate,
-    		displayText;
-    
-    TimeZone timeZone;
-    String	name,
-    		tradeTimeStr,
-    		tradeDateStr,
-			macdIndicator;
-    Calendar 	tradeTime,
-    			exDate,
-    			payDate;
-    BigDecimal 	price,
-    			open,
-    			dayHigh,
-    			dayLow,
-    			previousClose,
-    			change,
-    			changeInPercent,
-    			dividendAnnualYield,
-    			dividendAnnualYieldPercent;
-
 	List<BigDecimal> historical_quote = new ArrayList<BigDecimal>();
 	List<BigDecimal> historical_low = new ArrayList<BigDecimal>();
 	List<BigDecimal> historical_high = new ArrayList<BigDecimal>();
 	MACD macd = new MACD();
 	RSI cekRSI = new RSI();
-	Button btnShow, btnClear;
 
-    static DecimalFormat formatter = new DecimalFormat("#,###.00");
+	Button btnShow, btnClear;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
-		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-		StrictMode.setThreadPolicy(policy);
-		
-		display = (TextView) findViewById(R.id.displayData); 
-		symbol_ET = (EditText) findViewById(R.id.insertSymbol);
-		btnShow = (Button) findViewById(R.id.btnShow);
-		btnClear = (Button) findViewById(R.id.btnClear);
 
-		symbol_ET.addTextChangedListener(new TextWatcher() {
-			 
-            @Override
-            public void afterTextChanged(Editable arg0) {
- 
-            }
- 
-            @Override
-            public void beforeTextChanged(CharSequence arg0, int arg1,
-                    int arg2, int arg3) {
-            }
- 
-            @Override
-            public void onTextChanged(CharSequence arg0, int arg1, int arg2,int arg3) {
-                // collect the text from the edit control, and trim off spaces.
-            	symbol_S = symbol_ET.getText().toString().trim();
-            }
- 
-        });
+
 	}
-	
-	public void onClick_Show(View view) throws IOException{
-		btnClear.setVisibility(View.VISIBLE);
-		btnShow.setVisibility(View.INVISIBLE);
-
-		stock = YahooFinance.get(symbol_S);
-		timeZone = stock.getQuote(true).getTimeZone();
-		name = stock.getName();
-		tradeTimeStr = stock.getQuote(true).getLastTradeTimeStr();
-		tradeDateStr = stock.getQuote(true).getLastTradeDateStr();
-		tradeTime = stock.getQuote(true).getLastTradeTime();
-		price = stock.getQuote(true).getPrice();
-		open = stock.getQuote(true).getOpen();
-		dayHigh = stock.getQuote(true).getOpen();
-		dayLow = stock.getQuote(true).getOpen();
-		previousClose = stock.getQuote(true).getPreviousClose();
-		change = stock.getQuote(true).getChange();
-		changeInPercent = stock.getQuote(true).getChangeInPercent();
-		historical_quote = get_historical_data(stock);
-		macd.calculate_MACD(historical_quote);
-		cekRSI.rsi_all(historical_quote);
-		if(macd.is_buy()){
-			macdIndicator = "Buy";
-		}
-		else if(macd.is_sell()){
-			macdIndicator = "Sell";
-		}
-		else{
-			macdIndicator = "No";
-		}
-
-		dispName 						= "Name	: " + name;
-		dispPrice 						= "Last Price	: Rp" + formatter.format(price);
-		dispTradeTimeStr 				= "Last Trade Time	: " + tradeTimeStr;
-		dispTradeDateStr 				= "Last Trade Date	: " + tradeDateStr;
-		if(tradeTime==null) {
-			dispTradeTime				= "Last Trade Time	: null";
-		} else {
-			dispTradeTime 				= "Last Trade Time	: " + tradeTime.getTime();
-		}
-		dispPreviousClose				= "Previous Close	: Rp" + formatter.format(previousClose);
-		dispChange 						= "Change	: Rp" + formatter.format(change) + " (" + changeInPercent + "%)";
-		dispOpen 						= "Open	: Rp" + formatter.format(open);
-		dispDayLow 						= "Low	: Rp" + formatter.format(dayLow);
-		dispDayHigh 					= "High	: Rp" + formatter.format(dayHigh);
-		displayText = dispName + "\n"
-					+ dispPrice + "\n"
-					+ dispTradeTime + "\n"
-					+ dispPreviousClose + "\n"
-					+ dispChange + "\n"
-					+ dispOpen + "\n"
-					+ dispDayLow + "\n"
-					+ dispDayHigh + "\n"
-					+ macdIndicator + "\n";
 
 
+	private void get_price(Stock stock_name) {
 
-		display.setText(displayText);
-	}
-	public void clearAction(View view){
-		btnClear.setVisibility(View.INVISIBLE);
-		btnShow.setVisibility(View.VISIBLE);
-		List<BigDecimal> historical_price = new ArrayList<BigDecimal>();
-		MACD macd = new MACD();
-	}
-	/*
-	private int priceFraction (int priceInput) {
-		int price = 0;
-		
-		if(priceInput < 500) {
-			price = 1;
-		} else if(priceInput >= 500 && priceInput < 5000) {
-			price = 5;
-		} else if(priceInput >= 5000) {
-			price = 25;
-		}
-		
-		return price;
-	}
-	*/
-
-	private List<BigDecimal> get_historical_data (Stock stock_name) throws IOException{
-		Calendar from = Calendar.getInstance();
-		from.add(Calendar.WEEK_OF_YEAR,-10);
-		List<HistoricalQuote> hist = stock_name.getHistory(from, Interval.DAILY);
-		for(HistoricalQuote dummy:hist){
-			historical_quote.add(dummy.getClose());
-			historical_low.add(dummy.getLow());
-			historical_high.add(dummy.getHigh());
-		}
-		Stochastic stoc = new Stochastic();
-        stoc.kCount(historical_low, historical_high, historical_quote);
-        stoc.dCount();
-		return historical_quote;
 	}
 }

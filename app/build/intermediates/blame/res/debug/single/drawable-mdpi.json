@@ -1,10 +1,14 @@
 [
     {
-        "merged": "C:\\Users\\Acer E5-475G\\Downloads\\StockApp31\\StockApp31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
-        "source": "C:\\Users\\Acer E5-475G\\Downloads\\StockApp31\\StockApp31\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+        "merged": "/home/rizki/informatika/project/stockapp/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
+        "source": "/home/rizki/informatika/project/stockapp/app/src/main/res/drawable-mdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\pekerti\\Documents\\Kerjaan\\Stock Predict App\\StockApp31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
-        "source": "C:\\Users\\pekerti\\Documents\\Kerjaan\\Stock Predict App\\StockApp31\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+        "merged": "/home/rizki/informatika/project/stockapp/C:\\Users\\Acer E5-475G\\Downloads\\StockApp31\\StockApp31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
+        "source": "/home/rizki/informatika/project/stockapp/C:\\Users\\Acer E5-475G\\Downloads\\StockApp31\\StockApp31\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "/home/rizki/informatika/project/stockapp/C:\\Users\\pekerti\\Documents\\Kerjaan\\Stock Predict App\\StockApp31\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
+        "source": "/home/rizki/informatika/project/stockapp/C:\\Users\\pekerti\\Documents\\Kerjaan\\Stock Predict App\\StockApp31\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
     }
 ]
