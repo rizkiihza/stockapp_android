@@ -1,4 +1,0 @@
-#Fri Sep 15 23:20:48 ICT 2017
-base.0=C\:\\Users\\Acer E5-475G\\Downloads\\StockApp31\\StockApp31\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
-renamed.0=classes.dex
-file.0=C\:\\Users\\Acer E5-475G\\Downloads\\StockApp31\\StockApp31\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
